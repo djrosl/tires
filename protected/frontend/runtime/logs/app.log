@@ -1,0 +1,192 @@
+2017-09-29 16:29:48 [::1][-][7d9f45f801e79fdff6ab31ef2b97b4ea][error][Error] Error: Call to a member function getProductAttributes() on array in /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/_productcarouselitem.php:19
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, NULL)
+#3 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/_latestproductslist.php(18): yii\base\View->render('_productcarouse...', Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require('/Users/macbook/...')
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/home.php(206): yii\base\View->render('/_latestproduct...', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require('/Users/macbook/...')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, Object(frontend\modules\site\controllers\DefaultController))
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('/home', Array, Object(frontend\modules\site\controllers\DefaultController))
+#12 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/controllers/DefaultController.php(51): yii\base\Controller->render('/home', Array)
+#13 [internal function]: frontend\modules\site\controllers\DefaultController->actionIndex()
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#20 {main}
+2017-09-29 16:33:06 [::1][-][7d9f45f801e79fdff6ab31ef2b97b4ea][error][Error] Error: Call to a member function getProductAttributes() on array in /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/_productcarouselitem.php:19
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, NULL)
+#3 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/_latestproductslist.php(18): yii\base\View->render('_productcarouse...', Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require('/Users/macbook/...')
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/home.php(206): yii\base\View->render('/_latestproduct...', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require('/Users/macbook/...')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, Object(frontend\modules\site\controllers\DefaultController))
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('/home', Array, Object(frontend\modules\site\controllers\DefaultController))
+#12 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/controllers/DefaultController.php(51): yii\base\Controller->render('/home', Array)
+#13 [internal function]: frontend\modules\site\controllers\DefaultController->actionIndex()
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#20 {main}
+2017-09-29 16:33:31 [::1][-][7d9f45f801e79fdff6ab31ef2b97b4ea][error][Error] Error: Call to a member function getProductAttributes() on array in /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/_productcarouselitem.php:19
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, NULL)
+#3 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/_latestproductslist.php(18): yii\base\View->render('_productcarouse...', Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require('/Users/macbook/...')
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/home.php(206): yii\base\View->render('/_latestproduct...', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require('/Users/macbook/...')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, Object(frontend\modules\site\controllers\DefaultController))
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('/home', Array, Object(frontend\modules\site\controllers\DefaultController))
+#12 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/controllers/DefaultController.php(51): yii\base\Controller->render('/home', Array)
+#13 [internal function]: frontend\modules\site\controllers\DefaultController->actionIndex()
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#20 {main}
+2017-10-02 17:13:26 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][error][Error] Error: Class 'frontend\widgets\UsniAdaptor' not found in /Users/macbook/Documents/mamp/tires/protected/frontend/widgets/FilterFrontWidget.php:41
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Widget.php(139): frontend\widgets\FilterFrontWidget->run()
+#1 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/views/front/view.php(28): yii\base\Widget::widget(Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require('/Users/macbook/...')
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, Object(productCategories\controllers\SiteController))
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('/front/view', Array, Object(productCategories\controllers\SiteController))
+#6 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/controllers/SiteController.php(77): yii\base\Controller->render('/front/view', Array)
+#7 [internal function]: productCategories\controllers\SiteController->actionView(5)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#14 {main}
+2017-10-02 17:13:25 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][info][application] $_GET = [
+    'id' => '4'
+    'a_3' => '70'
+    'a_4' => '265'
+    'a_5' => '17'
+]
+2017-10-03 01:01:19 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][error][Error] Error: Cannot use object of type cart\models\Item as array in /Users/macbook/Documents/mamp/tires/protected/common/modules/cart/views/view.php:32
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, Object(cart\controllers\DefaultController))
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('/view', Array, Object(cart\controllers\DefaultController))
+#4 /Users/macbook/Documents/mamp/tires/protected/common/modules/cart/controllers/DefaultController.php(88): yii\base\Controller->render('/view', Array)
+#5 [internal function]: cart\controllers\DefaultController->actionView()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('cart/default/vi...', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#12 {main}
+2017-10-03 01:05:17 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][error][Error] Error: Cannot use object of type cart\models\Item as array in /Users/macbook/Documents/mamp/tires/protected/common/modules/cart/views/view.php:27
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, Object(cart\controllers\DefaultController))
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('/view', Array, Object(cart\controllers\DefaultController))
+#4 /Users/macbook/Documents/mamp/tires/protected/common/modules/cart/controllers/DefaultController.php(88): yii\base\Controller->render('/view', Array)
+#5 [internal function]: cart\controllers\DefaultController->actionView()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('cart/default/vi...', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#12 {main}
+2017-10-03 02:52:46 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][error][Error] Error: Class '\common\modules\payment\business\1\PaymentProcessor' not found in /Users/macbook/Documents/mamp/tires/protected/common/modules/payment/components/PaymentFactory.php:55
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/protected/common/modules/order/business/AdminCheckoutManager.php(132): common\modules\payment\components\PaymentFactory->getInstance()
+#1 /Users/macbook/Documents/mamp/tires/protected/common/modules/order/business/AdminCheckoutManager.php(90): common\modules\order\business\AdminCheckoutManager->processOrderCreation(Object(cart\dto\CheckoutDTO))
+#2 /Users/macbook/Documents/mamp/tires/protected/common/modules/cart/business/CheckoutManager.php(23): common\modules\order\business\AdminCheckoutManager->processCheckout(Object(cart\dto\CheckoutDTO))
+#3 /Users/macbook/Documents/mamp/tires/protected/common/modules/cart/controllers/CheckoutController.php(70): cart\business\CheckoutManager->processCheckout(Object(cart\dto\CheckoutDTO))
+#4 [internal function]: cart\controllers\CheckoutController->actionIndex()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('cart/checkout', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#11 {main}
+2017-10-03 02:52:46 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][info][application] $_POST = [
+    'BillingInfoEditForm' => [
+        'firstname' => 'roma'
+        'lastname' => 'lastname'
+        'email' => 'dubztep45@gmail.com'
+        'mobilephone' => ' 380636811364'
+        'address1' => 'address1'
+        'address2' => 'address2'
+        'city' => 'city'
+        'state' => 'state'
+        'country' => 'UA'
+        'postal_code' => '00000'
+    ]
+    'PaymentMethodEditForm' => [
+        'payment_method' => '1'
+        'agree' => '1'
+    ]
+]
+2017-10-03 13:06:14 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][error][Swift_RfcComplianceException] Swift_RfcComplianceException: Address in mailbox given [Проскурів шина] does not comply with RFC 2822, 3.6.2. in /Users/macbook/Documents/mamp/tires/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php:354
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(271): Swift_Mime_Headers_MailboxHeader->assertValidAddress('\xD0\x9F\xD1\x80\xD0\xBE\xD1\x81\xD0\xBA\xD1\x83\xD1\x80\xD1...')
+#1 /Users/macbook/Documents/mamp/tires/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(116): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes(Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(73): Swift_Mime_Headers_MailboxHeader->setNameAddresses(Array)
+#3 /Users/macbook/Documents/mamp/tires/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(603): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel(Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(219): Swift_Mime_SimpleMimeEntity->setHeaderFieldModel('From', Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2-swiftmailer/Message.php(103): Swift_Mime_SimpleMessage->setFrom(Array)
+#6 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/controllers/DefaultController.php(155): yii\swiftmailer\Message->setFrom(Array)
+#7 [internal function]: frontend\modules\site\controllers\DefaultController->actionCallback()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('callback', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/default/ca...', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#14 {main}
+2017-10-03 13:06:14 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][info][application] $_POST = [
+    'name' => 'roma'
+    'phone' => '+3232783724'
+]
+2017-10-03 16:53:00 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][error][ParseError] ParseError: syntax error, unexpected 'default' (T_DEFAULT) in /Users/macbook/Documents/mamp/tires/protected/common/modules/cms/views/front/page.php:85
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, Object(common\modules\cms\controllers\SiteController))
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('/front/page', Array, Object(common\modules\cms\controllers\SiteController))
+#3 /Users/macbook/Documents/mamp/tires/protected/common/modules/cms/controllers/SiteController.php(41): yii\base\Controller->render('/front/page', Array)
+#4 [internal function]: common\modules\cms\controllers\SiteController->actionPage('our_offices')
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('page', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('cms/site/page', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#11 {main}
+2017-10-03 16:53:00 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][info][application] $_GET = [
+    'alias' => 'our_offices'
+]

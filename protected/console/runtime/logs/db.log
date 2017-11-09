@@ -1,0 +1,2234 @@
+2017-09-28 16:15:27 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(27): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(27): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:15:24 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users/macbook'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615324.044354
+    'REQUEST_TIME' => 1506615324
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:15:27 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(27): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(27): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:15:24 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users/macbook'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615324.044354
+    'REQUEST_TIME' => 1506615324
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:17:02 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:17:02 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users/macbook'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615422.7797
+    'REQUEST_TIME' => 1506615422
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:17:02 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:17:02 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users/macbook'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615422.7797
+    'REQUEST_TIME' => 1506615422
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:20:21 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:20:21 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615621.8091
+    'REQUEST_TIME' => 1506615621
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:20:21 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:20:21 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615621.8091
+    'REQUEST_TIME' => 1506615621
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:22:09 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:22:09 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615729.1127
+    'REQUEST_TIME' => 1506615729
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:22:09 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:22:09 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615729.1127
+    'REQUEST_TIME' => 1506615729
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:22:47 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:22:47 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615767.7345
+    'REQUEST_TIME' => 1506615767
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:22:47 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:22:47 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615767.7345
+    'REQUEST_TIME' => 1506615767
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:23:03 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:23:03 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615783.8484
+    'REQUEST_TIME' => 1506615783
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:23:03 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:23:03 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615783.8484
+    'REQUEST_TIME' => 1506615783
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:23:16 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:23:16 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615796.7716
+    'REQUEST_TIME' => 1506615796
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:23:16 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:23:16 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506615796.7716
+    'REQUEST_TIME' => 1506615796
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:29:44 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:29:44 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506616184.7933
+    'REQUEST_TIME' => 1506616184
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:29:44 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:29:44 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506616184.7933
+    'REQUEST_TIME' => 1506616184
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:33:04 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:33:04 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506616384.9283
+    'REQUEST_TIME' => 1506616384
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:33:04 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:33:04 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506616384.9283
+    'REQUEST_TIME' => 1506616384
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:34:00 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:34:00 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506616440.0427
+    'REQUEST_TIME' => 1506616440
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:34:00 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:34:00 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506616440.0427
+    'REQUEST_TIME' => 1506616440
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:36:02 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:36:02 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506616562.0029
+    'REQUEST_TIME' => 1506616562
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 16:36:02 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#10 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(23): yii\db\ActiveQuery->all()
+#8 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-09-28 16:36:02 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506616562.0029
+    'REQUEST_TIME' => 1506616562
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 18:41:33 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list' in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#5 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+The SQL being executed was: SELECT `name` FROM `tbl_product_attribute` in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT `name` F...')
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#5 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'name' in 'field list'
+)
+
+2017-09-28 18:41:33 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => '/Applications/MAMP/bin/php/php7.1.6/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506616893.12
+    'REQUEST_TIME' => 1506616893
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-09-28 18:41:33 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list' in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#5 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+The SQL being executed was: SELECT `name` FROM `tbl_product_attribute` in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT `name` F...')
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(24): yii\db\ActiveQuery->all()
+#5 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'name' in 'field list'
+)
+
+2017-09-28 18:41:33 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pnXX9VK5dr/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'OLDPWD' => '/Users'
+    'TERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.kExJTRiOp5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'ITERM_ORIG_PS1' => '\\h:\\W \\u\\$ '
+    'PS1' => '\\h:\\W \\u\\$ '
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_PREV_PS1' => '\\[]133;D;$?]1337;RemoteHost=macbook@MacBook-Pro-MacBook.local]1337;CurrentDir=/Users/macbook/Documents/mamp/tires]133;A\\]\\h:\\W \\u\\$ \\[]133;B\\]'
+    'ITERM_SESSION_ID' => 'w0t0p0:22E03DE1-A113-40AD-ACA5-154F04BCC180'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => '/Applications/MAMP/bin/php/php7.1.6/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506616893.12
+    'REQUEST_TIME' => 1506616893
+    'argv' => [
+        0 => './yii'
+        1 => 'parse'
+    ]
+    'argc' => 2
+]
+2017-10-03 01:17:47 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(792): yii\db\Schema->quoteValue('en-US')
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('en-US')
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(871): yii\db\Command->getRawSql()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/products/dao/ProductAttributeDAO.php(29): yii\db\Command->queryAll()
+#10 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(26): products\dao\ProductAttributeDAO::getAll('en-US')
+#11 [internal function]: console\controllers\ParseController->actionIndex('heavy_tires.xls...', '6')
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('index', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse/index', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse/index', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(792): yii\db\Schema->quoteValue('en-US')
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('en-US')
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(871): yii\db\Command->getRawSql()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/products/dao/ProductAttributeDAO.php(29): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(26): products\dao\ProductAttributeDAO::getAll('en-US')
+#9 [internal function]: console\controllers\ParseController->actionIndex('heavy_tires.xls...', '6')
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('index', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse/index', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse/index', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#17 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#18 {main}
+Additional Information:
+
+2017-10-03 01:17:47 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.6bxcxFBa8R/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'TERM_SESSION_ID' => 'w0t0p0:0E3677D5-72CA-410E-9899-F20B22097ADC'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.Wcl9rUlDnv/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_SESSION_ID' => 'w0t0p0:0E3677D5-72CA-410E-9899-F20B22097ADC'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    '_' => './yii'
+    'OLDPWD' => '/Users/macbook'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506993466.9926
+    'REQUEST_TIME' => 1506993466
+    'argv' => [
+        0 => './yii'
+        1 => 'parse/index'
+        2 => 'heavy_tires.xlsx'
+        3 => '6'
+    ]
+    'argc' => 4
+]
+2017-10-03 01:17:47 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(792): yii\db\Schema->quoteValue('en-US')
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('en-US')
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(871): yii\db\Command->getRawSql()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#9 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/products/dao/ProductAttributeDAO.php(29): yii\db\Command->queryAll()
+#10 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(26): products\dao\ProductAttributeDAO::getAll('en-US')
+#11 [internal function]: console\controllers\ParseController->actionIndex('heavy_tires.xls...', '6')
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('index', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse/index', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse/index', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(792): yii\db\Schema->quoteValue('en-US')
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('en-US')
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(871): yii\db\Command->getRawSql()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/products/dao/ProductAttributeDAO.php(29): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(26): products\dao\ProductAttributeDAO::getAll('en-US')
+#9 [internal function]: console\controllers\ParseController->actionIndex('heavy_tires.xls...', '6')
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('index', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse/index', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse/index', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#17 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#18 {main}
+Additional Information:
+
+2017-10-03 01:17:47 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/kl/vl_73xqd2dsg4mr0njrbvsp80000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.6bxcxFBa8R/Render'
+    'TERM_PROGRAM_VERSION' => '3.0.15'
+    'TERM_SESSION_ID' => 'w0t0p0:0E3677D5-72CA-410E-9899-F20B22097ADC'
+    'USER' => 'macbook'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.Wcl9rUlDnv/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/macbook/Documents/mamp/tires'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/macbook'
+    'COLORFGBG' => '7;0'
+    'ITERM_SESSION_ID' => 'w0t0p0:0E3677D5-72CA-410E-9899-F20B22097ADC'
+    'LOGNAME' => 'macbook'
+    'LC_CTYPE' => 'UTF-8'
+    '_' => './yii'
+    'OLDPWD' => '/Users/macbook'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1506993466.9926
+    'REQUEST_TIME' => 1506993466
+    'argv' => [
+        0 => './yii'
+        1 => 'parse/index'
+        2 => 'heavy_tires.xlsx'
+        3 => '6'
+    ]
+    'argc' => 4
+]

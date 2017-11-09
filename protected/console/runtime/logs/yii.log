@@ -1,0 +1,248 @@
+2017-09-28 15:09:50 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: scandir(/Users/macbook/Documents/mamp/tires/protected/console/messages/ru): failed to open dir: No such file or directory in /Users/macbook/Documents/mamp/tires/protected/console/controllers/TranslateController.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'scandir(/Users/...', '/Users/macbook/...', 22, Array)
+#1 /Users/macbook/Documents/mamp/tires/protected/console/controllers/TranslateController.php(22): scandir('/Users/macbook/...')
+#2 [internal function]: console\controllers\TranslateController->actionIndex()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('translate', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('translate', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#11 {main}
+2017-09-28 15:09:50 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: scandir(/Users/macbook/Documents/mamp/tires/protected/console/messages/ru): failed to open dir: No such file or directory in /Users/macbook/Documents/mamp/tires/protected/console/controllers/TranslateController.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'scandir(/Users/...', '/Users/macbook/...', 22, Array)
+#1 /Users/macbook/Documents/mamp/tires/protected/console/controllers/TranslateController.php(22): scandir('/Users/macbook/...')
+#2 [internal function]: console\controllers\TranslateController->actionIndex()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('translate', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('translate', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#11 {main}
+2017-09-28 15:22:17 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: ksort() expects parameter 1 to be array, integer given in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/controllers/MessageController.php:651
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'ksort() expects...', '/Users/macbook/...', 651, Array)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/controllers/MessageController.php(651): ksort(1)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/controllers/MessageController.php(629): yii\console\controllers\MessageController->saveMessagesCategoryToPHP(Array, '/Users/macbook/...', true, false, false, 'application', true)
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/controllers/MessageController.php(324): yii\console\controllers\MessageController->saveMessagesToPHP(Array, '/Users/macbook/...', true, false, false, true)
+#4 [internal function]: yii\console\controllers\MessageController->actionExtract('messages/config...')
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#13 {main}
+2017-09-28 15:22:17 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: ksort() expects parameter 1 to be array, integer given in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/controllers/MessageController.php:651
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'ksort() expects...', '/Users/macbook/...', 651, Array)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/controllers/MessageController.php(651): ksort(1)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/controllers/MessageController.php(629): yii\console\controllers\MessageController->saveMessagesCategoryToPHP(Array, '/Users/macbook/...', true, false, false, 'application', true)
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/controllers/MessageController.php(324): yii\console\controllers\MessageController->saveMessagesToPHP(Array, '/Users/macbook/...', true, false, false, true)
+#4 [internal function]: yii\console\controllers\MessageController->actionExtract('messages/config...')
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#13 {main}
+2017-09-28 18:46:08 [-][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php:26
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(26): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Users/macbook/...', 26, Array)
+#1 [internal function]: console\controllers\ParseController->console\controllers\{closure}(Array)
+#2 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(27): array_map(Object(Closure), Array)
+#3 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#12 {main}
+2017-09-28 18:46:08 [-][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php:26
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(26): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Users/macbook/...', 26, Array)
+#1 [internal function]: console\controllers\ParseController->console\controllers\{closure}(Array)
+#2 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(27): array_map(Object(Closure), Array)
+#3 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#12 {main}
+2017-09-28 22:45:13 [-][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: usni\library\console\Application::getFrontUrl() in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/web/AssetManager.php(95): yii\base\Component->__call('getFrontUrl', Array)
+#1 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): usni\library\web\AssetManager->getImageUploadUrl()
+#2 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#11 {main}
+2017-09-28 22:45:13 [-][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: usni\library\console\Application::getFrontUrl() in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/web/AssetManager.php(95): yii\base\Component->__call('getFrontUrl', Array)
+#1 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(25): usni\library\web\AssetManager->getImageUploadUrl()
+#2 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#11 {main}
+2017-09-28 23:08:25 [-][1][-][error][yii\base\ErrorException:2] yii\base\ErrorException: fopen(): Filename cannot be empty in /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'fopen(): Filena...', '/Users/macbook/...', 67, Array)
+#1 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(67): fopen('', 'r')
+#2 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#11 {main}
+2017-09-28 23:08:25 [-][1][-][error][yii\base\ErrorException:2] yii\base\ErrorException: fopen(): Filename cannot be empty in /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'fopen(): Filena...', '/Users/macbook/...', 67, Array)
+#1 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(67): fopen('', 'r')
+#2 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#11 {main}
+2017-09-28 23:30:29 [-][1][-][error][yii\base\ErrorException:2] yii\base\ErrorException: fopen(): SSL: Handshake timed out in /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php:64
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'fopen(): SSL: H...', '/Users/macbook/...', 64, Array)
+#1 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(64): fopen('https://app.aut...', 'r')
+#2 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#11 {main}
+2017-09-28 23:30:29 [-][1][-][error][yii\base\ErrorException:2] yii\base\ErrorException: fopen(): SSL: Handshake timed out in /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php:64
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'fopen(): SSL: H...', '/Users/macbook/...', 64, Array)
+#1 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(64): fopen('https://app.aut...', 'r')
+#2 [internal function]: console\controllers\ParseController->actionIndex('tires.xlsx')
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#11 {main}
+2017-10-03 01:16:05 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --filename in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php:120
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#5 {main}
+2017-10-03 01:16:05 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --filename in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php:120
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse', Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse', Array)
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#5 {main}
+2017-10-03 01:16:21 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --filename in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php:120
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse/index', Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse/index', Array)
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#5 {main}
+2017-10-03 01:16:21 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --filename in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php:120
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse/index', Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse/index', Array)
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#5 {main}
+2017-10-03 03:20:32 [-][1][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: Шипи in /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php:78
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(78): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Users/macbook/...', 78, Array)
+#1 [internal function]: console\controllers\ParseController->actionIndex('heavy_tires.xls...', '6')
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('index', Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse/index', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse/index', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#10 {main}
+2017-10-03 03:20:32 [-][1][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: Шипи in /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php:78
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(78): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Users/macbook/...', 78, Array)
+#1 [internal function]: console\controllers\ParseController->actionIndex('heavy_tires.xls...', '6')
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('index', Array)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse/index', Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse/index', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#10 {main}
+2017-10-03 16:02:18 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --fields in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php:120
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('add', Array)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate/add', Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate/add', Array)
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#5 {main}
+2017-10-03 16:02:18 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --fields in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php:120
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('add', Array)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate/add', Array)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate/add', Array)
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#5 {main}

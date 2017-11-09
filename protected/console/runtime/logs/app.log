@@ -1,0 +1,38 @@
+2017-10-03 03:20:16 [-][-][-][error][PHPExcel_Reader_Exception] PHPExcel_Reader_Exception: Could not open /Users/macbook/Documents/mamp/tires/backend/price/heavy_tires for reading! File does not exist. in /Users/macbook/Documents/mamp/tires/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Excel2007.php:82
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/phpoffice/phpexcel/Classes/PHPExcel/IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('/Users/macbook/...')
+#1 /Users/macbook/Documents/mamp/tires/vendor/phpoffice/phpexcel/Classes/PHPExcel/IOFactory.php(205): PHPExcel_IOFactory::createReaderForFile('/Users/macbook/...')
+#2 /Users/macbook/Documents/mamp/tires/vendor/moonlandsoft/yii2-phpexcel/Excel.php(581): PHPExcel_IOFactory::identify('/Users/macbook/...')
+#3 /Users/macbook/Documents/mamp/tires/vendor/moonlandsoft/yii2-phpexcel/Excel.php(673): moonland\phpexcel\Excel->readFile('/Users/macbook/...')
+#4 /Users/macbook/Documents/mamp/tires/vendor/moonlandsoft/yii2-phpexcel/Excel.php(767): moonland\phpexcel\Excel->run()
+#5 /Users/macbook/Documents/mamp/tires/vendor/moonlandsoft/yii2-phpexcel/Excel.php(750): moonland\phpexcel\Excel::widget(Array)
+#6 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(28): moonland\phpexcel\Excel::import('/Users/macbook/...')
+#7 [internal function]: console\controllers\ParseController->actionIndex('heavy_tires', '6')
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('index', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse/index', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse/index', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#16 {main}
+2017-10-03 03:20:16 [-][-][-][error][PHPExcel_Reader_Exception] PHPExcel_Reader_Exception: Could not open /Users/macbook/Documents/mamp/tires/backend/price/heavy_tires for reading! File does not exist. in /Users/macbook/Documents/mamp/tires/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Excel2007.php:82
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/phpoffice/phpexcel/Classes/PHPExcel/IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('/Users/macbook/...')
+#1 /Users/macbook/Documents/mamp/tires/vendor/phpoffice/phpexcel/Classes/PHPExcel/IOFactory.php(205): PHPExcel_IOFactory::createReaderForFile('/Users/macbook/...')
+#2 /Users/macbook/Documents/mamp/tires/vendor/moonlandsoft/yii2-phpexcel/Excel.php(581): PHPExcel_IOFactory::identify('/Users/macbook/...')
+#3 /Users/macbook/Documents/mamp/tires/vendor/moonlandsoft/yii2-phpexcel/Excel.php(673): moonland\phpexcel\Excel->readFile('/Users/macbook/...')
+#4 /Users/macbook/Documents/mamp/tires/vendor/moonlandsoft/yii2-phpexcel/Excel.php(767): moonland\phpexcel\Excel->run()
+#5 /Users/macbook/Documents/mamp/tires/vendor/moonlandsoft/yii2-phpexcel/Excel.php(750): moonland\phpexcel\Excel::widget(Array)
+#6 /Users/macbook/Documents/mamp/tires/protected/console/controllers/ParseController.php(28): moonland\phpexcel\Excel::import('/Users/macbook/...')
+#7 [internal function]: console\controllers\ParseController->actionIndex('heavy_tires', '6')
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('index', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('parse/index', Array)
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('parse/index', Array)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 /Users/macbook/Documents/mamp/tires/yii(51): yii\base\Application->run()
+#16 {main}

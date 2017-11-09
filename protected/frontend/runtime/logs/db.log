@@ -1,0 +1,1329 @@
+2017-10-01 15:56:48 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'value' in 'field list' in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /Users/macbook/Documents/mamp/tires/protected/frontend/widgets/FilterFrontWidget.php(24): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\widgets\FilterFrontWidget->frontend\widgets\{closure}(Array)
+#6 /Users/macbook/Documents/mamp/tires/protected/frontend/widgets/FilterFrontWidget.php(28): array_map(Object(Closure), Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Widget.php(139): frontend\widgets\FilterFrontWidget->run()
+#8 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/_carousel.php(27): yii\base\Widget::widget()
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require('/Users/macbook/...')
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, NULL)
+#12 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/home.php(10): yii\base\View->render('/_carousel')
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require('/Users/macbook/...')
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, Object(frontend\modules\site\controllers\DefaultController))
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('/home', Array, Object(frontend\modules\site\controllers\DefaultController))
+#17 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/controllers/DefaultController.php(51): yii\base\Controller->render('/home', Array)
+#18 [internal function]: frontend\modules\site\controllers\DefaultController->actionIndex()
+#19 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#21 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#22 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#23 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#25 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'value' in 'field list'
+The SQL being executed was: SELECT `value` FROM `tbl_product_attribute_mapping` WHERE `attribute_id`='3' in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT `value` ...')
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /Users/macbook/Documents/mamp/tires/protected/frontend/widgets/FilterFrontWidget.php(24): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\widgets\FilterFrontWidget->frontend\widgets\{closure}(Array)
+#6 /Users/macbook/Documents/mamp/tires/protected/frontend/widgets/FilterFrontWidget.php(28): array_map(Object(Closure), Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Widget.php(139): frontend\widgets\FilterFrontWidget->run()
+#8 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/_carousel.php(27): yii\base\Widget::widget()
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require('/Users/macbook/...')
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#11 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, NULL)
+#12 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/views/home.php(10): yii\base\View->render('/_carousel')
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(328): require('/Users/macbook/...')
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/macbook/...', Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/macbook/...', Array, Object(frontend\modules\site\controllers\DefaultController))
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('/home', Array, Object(frontend\modules\site\controllers\DefaultController))
+#17 /Users/macbook/Documents/mamp/tires/protected/frontend/modules/site/controllers/DefaultController.php(51): yii\base\Controller->render('/home', Array)
+#18 [internal function]: frontend\modules\site\controllers\DefaultController->actionIndex()
+#19 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#21 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#22 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#23 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#25 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'value' in 'field list'
+)
+
+2017-10-01 15:56:48 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][info][application] $_COOKIE = [
+    'PHPFRONTSESSID' => '238c2b3135fb55d58b6fedbfe94992cf'
+    '_frontendCSRF' => '2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE\";}'
+    'PHPBACKSESSID' => '7a8422c3dcfb58a224cfd76e2fb51a2a'
+    '_csrf' => '2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3\";}'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'guest_1' => 'O:25:\"frontend\\components\\Guest\":6:{s:4:\"cart\";O:16:\"cart\\models\\Cart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"wishlist\";O:24:\"wishlist\\models\\Wishlist\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:15:\"compareproducts\";O:31:\"products\\models\\CompareProducts\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:20:\"cart\\models\\Checkout\":10:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+    'globalMenuItems' => [
+        0 => [
+            'id' => '4'
+            'image' => 'N2ExMjEzNz1.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '1'
+            'path' => '4'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:30:26'
+            'modified_datetime' => '2017-09-28 18:30:26'
+            'name' => 'Шини'
+            'description' => '<p>Шини для легкових автомобілів</p>'
+            'alias' => 'tires'
+        ]
+        1 => [
+            'id' => '5'
+            'image' => 'NGU1OWVhMz1269435540_dezentf-3.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '2'
+            'path' => '5'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:33:05'
+            'modified_datetime' => '2017-09-28 18:33:05'
+            'name' => 'Диски'
+            'description' => ''
+            'alias' => 'wheel_disc'
+        ]
+        2 => [
+            'id' => '6'
+            'image' => 'OWY0OGVmMWvi_3-oshz.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '3'
+            'path' => '6'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:34:48'
+            'modified_datetime' => '2017-09-28 18:35:08'
+            'name' => 'Вантажні шини'
+            'description' => ''
+            'alias' => 'cargo_tires'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://tires:8888/catalog/productCategories/site/view?id=4&sort=priceasc&page=8&per-page=18'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=238c2b3135fb55d58b6fedbfe94992cf; _frontendCSRF=2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE%22%3B%7D; PHPBACKSESSID=7a8422c3dcfb58a224cfd76e2fb51a2a; _csrf=2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3%22%3B%7D; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/index.php'
+    'REMOTE_PORT' => '60108'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506862608.12
+    'REQUEST_TIME' => 1506862608
+    'argv' => []
+    'argc' => 0
+]
+2017-10-01 17:24:03 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tpam.attribute_it' in 'where clause' in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(436): yii\db\Command->queryScalar()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(319): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(166): yii\db\Query->count('*', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(149): yii\data\ActiveDataProvider->prepareTotalCount()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#7 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/dataproviders/ArrayRecordDataProvider.php(26): yii\data\ActiveDataProvider->prepareModels()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(81): usni\library\dataproviders\ArrayRecordDataProvider->prepareModels()
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(94): yii\data\BaseDataProvider->prepare()
+#10 /Users/macbook/Documents/mamp/tires/protected/frontend/business/SearchManager.php(63): yii\data\BaseDataProvider->getModels()
+#11 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/business/SiteManager.php(50): frontend\business\SearchManager->getDataProvider(Object(productCategories\dto\ProductCategoryListViewDTO))
+#12 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/controllers/SiteController.php(56): productCategories\business\SiteManager->processView(Object(productCategories\dto\ProductCategoryListViewDTO))
+#13 [internal function]: productCategories\controllers\SiteController->actionView(6)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tpam.attribute_it' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM (SELECT `tp`.*, `tpt`.`name`, `tpt`.`description` FROM `tbl_product` `tp`, `tbl_product_translated` `tpt`, `tbl_product_category_mapping` `tpcm`, `tbl_product_attribute_mapping` `tpam` WHERE (tpcm.data_category_id = '1' AND tpcm.category_id = '4' AND tpcm.product_id = tp.id AND tp.status = 1 AND tp.id = tpt.owner_id AND tpt.language = 'en-US') AND (tpam.product_id = tp.id AND tpam.attribute_it = 6 AND tpam.attribute_value = 'всесезонна') AND (tpam.product_id = tp.id AND tpam.attribute_it = 6 AND tpam.attribute_value = 'всесезонна') AND (tpam.product_id = tp.id AND tpam.attribute_it = 6 AND tpam.attribute_value = 'всесезонна') AND (tpam.product_id = tp.id AND tpam.attribute_it = 6 AND tpam.attribute_value = 'всесезонна') GROUP BY `tp`.`id`) `c` in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(436): yii\db\Command->queryScalar()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(319): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(166): yii\db\Query->count('*', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(149): yii\data\ActiveDataProvider->prepareTotalCount()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#7 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/dataproviders/ArrayRecordDataProvider.php(26): yii\data\ActiveDataProvider->prepareModels()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(81): usni\library\dataproviders\ArrayRecordDataProvider->prepareModels()
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(94): yii\data\BaseDataProvider->prepare()
+#10 /Users/macbook/Documents/mamp/tires/protected/frontend/business/SearchManager.php(63): yii\data\BaseDataProvider->getModels()
+#11 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/business/SiteManager.php(50): frontend\business\SearchManager->getDataProvider(Object(productCategories\dto\ProductCategoryListViewDTO))
+#12 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/controllers/SiteController.php(56): productCategories\business\SiteManager->processView(Object(productCategories\dto\ProductCategoryListViewDTO))
+#13 [internal function]: productCategories\controllers\SiteController->actionView(6)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'tpam.attribute_it' in 'where clause'
+)
+
+2017-10-01 17:24:03 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][info][application] $_GET = [
+    'id' => '4'
+    'a_3' => '30'
+    'a_4' => '145'
+    'a_5' => '16'
+    'a_6' => 'всесезонна'
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => '238c2b3135fb55d58b6fedbfe94992cf'
+    '_frontendCSRF' => '2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE\";}'
+    'PHPBACKSESSID' => '7a8422c3dcfb58a224cfd76e2fb51a2a'
+    '_csrf' => '2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3\";}'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'guest_1' => 'O:25:\"frontend\\components\\Guest\":6:{s:4:\"cart\";O:16:\"cart\\models\\Cart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"wishlist\";O:24:\"wishlist\\models\\Wishlist\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:15:\"compareproducts\";O:31:\"products\\models\\CompareProducts\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:20:\"cart\\models\\Checkout\":10:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+    'globalMenuItems' => [
+        0 => [
+            'id' => '4'
+            'image' => 'N2ExMjEzNz1.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '1'
+            'path' => '4'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:30:26'
+            'modified_datetime' => '2017-09-28 18:30:26'
+            'name' => 'Шини'
+            'description' => '<p>Шини для легкових автомобілів</p>'
+            'alias' => 'tires'
+        ]
+        1 => [
+            'id' => '5'
+            'image' => 'NGU1OWVhMz1269435540_dezentf-3.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '2'
+            'path' => '5'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:33:05'
+            'modified_datetime' => '2017-09-28 18:33:05'
+            'name' => 'Диски'
+            'description' => ''
+            'alias' => 'wheel_disc'
+        ]
+        2 => [
+            'id' => '6'
+            'image' => 'OWY0OGVmMWvi_3-oshz.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '3'
+            'path' => '6'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:34:48'
+            'modified_datetime' => '2017-09-28 18:35:08'
+            'name' => 'Вантажні шини'
+            'description' => ''
+            'alias' => 'cargo_tires'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://tires:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=238c2b3135fb55d58b6fedbfe94992cf; _frontendCSRF=2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE%22%3B%7D; PHPBACKSESSID=7a8422c3dcfb58a224cfd76e2fb51a2a; _csrf=2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3%22%3B%7D; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/index.php'
+    'REMOTE_PORT' => '56054'
+    'REDIRECT_QUERY_STRING' => 'id=4&a_3=30&a_4=145&a_5=16&a_6=%D0%B2%D1%81%D0%B5%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%BD%D0%B0'
+    'REDIRECT_URL' => '/catalog/productCategories/site/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4&a_3=30&a_4=145&a_5=16&a_6=%D0%B2%D1%81%D0%B5%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%BD%D0%B0'
+    'REQUEST_URI' => '/catalog/productCategories/site/view?id=4&a_3=30&a_4=145&a_5=16&a_6=%D0%B2%D1%81%D0%B5%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%BD%D0%B0'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506867843.62
+    'REQUEST_TIME' => 1506867843
+    'argv' => [
+        0 => 'id=4&a_3=30&a_4=145&a_5=16&a_6=%D0%B2%D1%81%D0%B5%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%BD%D0%B0'
+    ]
+    'argc' => 1
+]
+2017-10-01 17:28:35 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'всесезонна' in 'where clause' in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(436): yii\db\Command->queryScalar()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(319): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(166): yii\db\Query->count('*', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(149): yii\data\ActiveDataProvider->prepareTotalCount()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#7 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/dataproviders/ArrayRecordDataProvider.php(26): yii\data\ActiveDataProvider->prepareModels()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(81): usni\library\dataproviders\ArrayRecordDataProvider->prepareModels()
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(94): yii\data\BaseDataProvider->prepare()
+#10 /Users/macbook/Documents/mamp/tires/protected/frontend/business/SearchManager.php(61): yii\data\BaseDataProvider->getModels()
+#11 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/business/SiteManager.php(50): frontend\business\SearchManager->getDataProvider(Object(productCategories\dto\ProductCategoryListViewDTO))
+#12 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/controllers/SiteController.php(56): productCategories\business\SiteManager->processView(Object(productCategories\dto\ProductCategoryListViewDTO))
+#13 [internal function]: productCategories\controllers\SiteController->actionView(6)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'всесезонна' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM (SELECT `tp`.*, `tpt`.`name`, `tpt`.`description` FROM `tbl_product` `tp`, `tbl_product_translated` `tpt`, `tbl_product_category_mapping` `tpcm`, `tbl_product_attribute_mapping` `tpam` WHERE (tpcm.data_category_id = '1' AND tpcm.category_id = '4' AND tpcm.product_id = tp.id AND tp.status = 1 AND tp.id = tpt.owner_id AND tpt.language = 'en-US') AND (tpam.product_id = tp.id AND tpam.attribute_id = 3 AND tpam.attribute_value = 30) AND (tpam.product_id = tp.id AND tpam.attribute_id = 4 AND tpam.attribute_value = 145) AND (tpam.product_id = tp.id AND tpam.attribute_id = 5 AND tpam.attribute_value = 16) AND (tpam.product_id = tp.id AND tpam.attribute_id = 6 AND tpam.attribute_value = всесезонна) GROUP BY `tp`.`id`) `c` in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(436): yii\db\Command->queryScalar()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(319): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(166): yii\db\Query->count('*', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(149): yii\data\ActiveDataProvider->prepareTotalCount()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#7 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/dataproviders/ArrayRecordDataProvider.php(26): yii\data\ActiveDataProvider->prepareModels()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(81): usni\library\dataproviders\ArrayRecordDataProvider->prepareModels()
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(94): yii\data\BaseDataProvider->prepare()
+#10 /Users/macbook/Documents/mamp/tires/protected/frontend/business/SearchManager.php(61): yii\data\BaseDataProvider->getModels()
+#11 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/business/SiteManager.php(50): frontend\business\SearchManager->getDataProvider(Object(productCategories\dto\ProductCategoryListViewDTO))
+#12 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/controllers/SiteController.php(56): productCategories\business\SiteManager->processView(Object(productCategories\dto\ProductCategoryListViewDTO))
+#13 [internal function]: productCategories\controllers\SiteController->actionView(6)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'всесезонна' in 'where clause'
+)
+
+2017-10-01 17:28:35 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][info][application] $_GET = [
+    'id' => '4'
+    'a_3' => '30'
+    'a_4' => '145'
+    'a_5' => '16'
+    'a_6' => 'всесезонна'
+    'page' => '3'
+    'per-page' => '18'
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => '238c2b3135fb55d58b6fedbfe94992cf'
+    '_frontendCSRF' => '2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE\";}'
+    'PHPBACKSESSID' => '7a8422c3dcfb58a224cfd76e2fb51a2a'
+    '_csrf' => '2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3\";}'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'guest_1' => 'O:25:\"frontend\\components\\Guest\":6:{s:4:\"cart\";O:16:\"cart\\models\\Cart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"wishlist\";O:24:\"wishlist\\models\\Wishlist\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:15:\"compareproducts\";O:31:\"products\\models\\CompareProducts\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:20:\"cart\\models\\Checkout\":10:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+    'globalMenuItems' => [
+        0 => [
+            'id' => '4'
+            'image' => 'N2ExMjEzNz1.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '1'
+            'path' => '4'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:30:26'
+            'modified_datetime' => '2017-09-28 18:30:26'
+            'name' => 'Шини'
+            'description' => '<p>Шини для легкових автомобілів</p>'
+            'alias' => 'tires'
+        ]
+        1 => [
+            'id' => '5'
+            'image' => 'NGU1OWVhMz1269435540_dezentf-3.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '2'
+            'path' => '5'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:33:05'
+            'modified_datetime' => '2017-09-28 18:33:05'
+            'name' => 'Диски'
+            'description' => ''
+            'alias' => 'wheel_disc'
+        ]
+        2 => [
+            'id' => '6'
+            'image' => 'OWY0OGVmMWvi_3-oshz.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '3'
+            'path' => '6'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:34:48'
+            'modified_datetime' => '2017-09-28 18:35:08'
+            'name' => 'Вантажні шини'
+            'description' => ''
+            'alias' => 'cargo_tires'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://tires:8888/catalog/productCategories/site/view?id=4&a_3=30&a_4=145&a_5=16&a_6=%D0%B2%D1%81%D0%B5%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%BD%D0%B0'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=238c2b3135fb55d58b6fedbfe94992cf; _frontendCSRF=2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE%22%3B%7D; PHPBACKSESSID=7a8422c3dcfb58a224cfd76e2fb51a2a; _csrf=2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3%22%3B%7D; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/index.php'
+    'REMOTE_PORT' => '56772'
+    'REDIRECT_QUERY_STRING' => 'id=4&a_3=30&a_4=145&a_5=16&a_6=%D0%B2%D1%81%D0%B5%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%BD%D0%B0&page=3&per-page=18'
+    'REDIRECT_URL' => '/catalog/productCategories/site/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4&a_3=30&a_4=145&a_5=16&a_6=%D0%B2%D1%81%D0%B5%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%BD%D0%B0&page=3&per-page=18'
+    'REQUEST_URI' => '/catalog/productCategories/site/view?id=4&a_3=30&a_4=145&a_5=16&a_6=%D0%B2%D1%81%D0%B5%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%BD%D0%B0&page=3&per-page=18'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506868115.62
+    'REQUEST_TIME' => 1506868115
+    'argv' => [
+        0 => 'id=4&a_3=30&a_4=145&a_5=16&a_6=%D0%B2%D1%81%D0%B5%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%BD%D0%B0&page=3&per-page=18'
+    ]
+    'argc' => 1
+]
+2017-10-02 16:19:32 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tpam.attribute_id' in 'where clause' in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(436): yii\db\Command->queryScalar()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(319): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(166): yii\db\Query->count('*', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(149): yii\data\ActiveDataProvider->prepareTotalCount()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#7 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/dataproviders/ArrayRecordDataProvider.php(26): yii\data\ActiveDataProvider->prepareModels()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(81): usni\library\dataproviders\ArrayRecordDataProvider->prepareModels()
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(94): yii\data\BaseDataProvider->prepare()
+#10 /Users/macbook/Documents/mamp/tires/protected/frontend/business/SearchManager.php(61): yii\data\BaseDataProvider->getModels()
+#11 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/business/SiteManager.php(50): frontend\business\SearchManager->getDataProvider(Object(productCategories\dto\ProductCategoryListViewDTO))
+#12 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/controllers/SiteController.php(56): productCategories\business\SiteManager->processView(Object(productCategories\dto\ProductCategoryListViewDTO))
+#13 [internal function]: productCategories\controllers\SiteController->actionView(4)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tpam.attribute_id' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM (SELECT `tp`.*, `tpt`.`name`, `tpt`.`description` FROM `tbl_product` `tp`, `tbl_product_translated` `tpt`, `tbl_product_category_mapping` `tpcm` INNER JOIN `tbl_product_category_mapping` `tpam` ON tpam.product_id = tp.id WHERE (tpcm.data_category_id = '1' AND tpcm.category_id = '4' AND tpcm.product_id = tp.id AND tp.status = 1 AND tp.id = tpt.owner_id AND tpt.language = 'en-US') AND (tpam.attribute_id = 3 AND tpam.attribute_value = '50') AND (tpam.attribute_id = 4 AND tpam.attribute_value = '265') GROUP BY `tp`.`id`) `c` in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(436): yii\db\Command->queryScalar()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(319): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(166): yii\db\Query->count('*', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(149): yii\data\ActiveDataProvider->prepareTotalCount()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#7 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/dataproviders/ArrayRecordDataProvider.php(26): yii\data\ActiveDataProvider->prepareModels()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(81): usni\library\dataproviders\ArrayRecordDataProvider->prepareModels()
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/data/BaseDataProvider.php(94): yii\data\BaseDataProvider->prepare()
+#10 /Users/macbook/Documents/mamp/tires/protected/frontend/business/SearchManager.php(61): yii\data\BaseDataProvider->getModels()
+#11 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/business/SiteManager.php(50): frontend\business\SearchManager->getDataProvider(Object(productCategories\dto\ProductCategoryListViewDTO))
+#12 /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/controllers/SiteController.php(56): productCategories\business\SiteManager->processView(Object(productCategories\dto\ProductCategoryListViewDTO))
+#13 [internal function]: productCategories\controllers\SiteController->actionView(4)
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'tpam.attribute_id' in 'where clause'
+)
+
+2017-10-02 16:19:32 [::1][-][238c2b3135fb55d58b6fedbfe94992cf][info][application] $_GET = [
+    'id' => '4'
+    'a_3' => '50'
+    'a_4' => '265'
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => '238c2b3135fb55d58b6fedbfe94992cf'
+    '_frontendCSRF' => '2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE\";}'
+    'PHPBACKSESSID' => '7a8422c3dcfb58a224cfd76e2fb51a2a'
+    '_csrf' => '2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3\";}'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'guest_1' => 'O:25:\"frontend\\components\\Guest\":6:{s:4:\"cart\";O:16:\"cart\\models\\Cart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"wishlist\";O:24:\"wishlist\\models\\Wishlist\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:15:\"compareproducts\";O:31:\"products\\models\\CompareProducts\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:20:\"cart\\models\\Checkout\":10:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+    'globalMenuItems' => [
+        0 => [
+            'id' => '4'
+            'image' => 'N2ExMjEzNz1.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '1'
+            'path' => '4'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:30:26'
+            'modified_datetime' => '2017-09-28 18:30:26'
+            'name' => 'Шини'
+            'description' => '<p>Шини для легкових автомобілів</p>'
+            'alias' => 'tires'
+        ]
+        1 => [
+            'id' => '5'
+            'image' => 'NGU1OWVhMz1269435540_dezentf-3.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '2'
+            'path' => '5'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:33:05'
+            'modified_datetime' => '2017-09-28 18:33:05'
+            'name' => 'Диски'
+            'description' => ''
+            'alias' => 'wheel_disc'
+        ]
+        2 => [
+            'id' => '6'
+            'image' => 'OWY0OGVmMWvi_3-oshz.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '3'
+            'path' => '6'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:34:48'
+            'modified_datetime' => '2017-09-28 18:35:08'
+            'name' => 'Вантажні шини'
+            'description' => ''
+            'alias' => 'cargo_tires'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://tires:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=238c2b3135fb55d58b6fedbfe94992cf; _frontendCSRF=2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE%22%3B%7D; PHPBACKSESSID=7a8422c3dcfb58a224cfd76e2fb51a2a; _csrf=2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3%22%3B%7D; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/index.php'
+    'REMOTE_PORT' => '50384'
+    'REDIRECT_QUERY_STRING' => 'id=4&a_3=50&a_4=265'
+    'REDIRECT_URL' => '/catalog/productCategories/site/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4&a_3=50&a_4=265'
+    'REQUEST_URI' => '/catalog/productCategories/site/view?id=4&a_3=50&a_4=265'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506950371.99
+    'REQUEST_TIME' => 1506950371
+    'argv' => [
+        0 => 'id=4&a_3=50&a_4=265'
+    ]
+    'argc' => 1
+]
+2017-10-03 19:52:09 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'KSEQRB0794', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/modules/language/business/Manager.php(78): yii\db\ActiveQuery->all()
+#10 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(105): usni\library\modules\language\business\Manager->getList()
+#11 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(49): backend\web\BeforeActionBehavior->setLanguageData()
+#12 /Users/macbook/Documents/mamp/tires/protected/frontend/web/BeforeActionBehavior.php(35): backend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#13 [internal function]: frontend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(144): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('detail', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#19 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#21 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/modules/language/business/Manager.php(78): yii\db\ActiveQuery->all()
+#8 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(105): usni\library\modules\language\business\Manager->getList()
+#9 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(49): backend\web\BeforeActionBehavior->setLanguageData()
+#10 /Users/macbook/Documents/mamp/tires/protected/frontend/web/BeforeActionBehavior.php(35): backend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#11 [internal function]: frontend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(144): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('detail', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2017-10-03 19:52:09 [::1][-][-][info][application] $_GET = [
+    'id' => '8515'
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => '238c2b3135fb55d58b6fedbfe94992cf'
+    '_frontendCSRF' => '2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE\";}'
+    '_csrf' => '2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3\";}'
+    'recent' => '3518a7c7fd31e5ba7d1c91c5a66a411d68ebbdf08681b3c96356a0ca4c9a07cda:2:{i:0;s:6:\"recent\";i:1;s:81:\",5897,8143,73,88,7617,848,4246,80,3272,7505,2384,5888,804,1521,8163,8663,724,8573\";}'
+    'PHPBACKSESSID' => 'dbf92b6a7eeece812f290f3b1b06962a'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'guest_1' => 'O:25:\"frontend\\components\\Guest\":6:{s:4:\"cart\";O:16:\"cart\\models\\Cart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"wishlist\";O:24:\"wishlist\\models\\Wishlist\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:15:\"compareproducts\";O:31:\"products\\models\\CompareProducts\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:20:\"cart\\models\\Checkout\":10:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";s:19:\"dubztep45@gmail.com\";s:9:\"firstname\";s:48:\"Слободян Роман Николаевич\";s:8:\"lastname\";s:8:\"lastname\";s:11:\"mobilephone\";s:9:\"986264200\";s:11:\"officephone\";N;s:8:\"address1\";s:8:\"address1\";s:4:\"city\";s:4:\"city\";s:7:\"country\";s:2:\"UA\";s:11:\"postal_code\";s:5:\"00000\";s:8:\"address2\";s:8:\"address2\";s:5:\"state\";s:5:\"state\";s:23:\"\0yii\\base\\Model\0_errors\";a:0:{}s:27:\"\0yii\\base\\Model\0_validators\";C:11:\"ArrayObject\":4738:{x:i:0;a:8:{i:0;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:32;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:2:{i:0;s:9:\"firstname\";i:1;s:8:\"lastname\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:1;O:32:\"yii\\validators\\RequiredValidator\":14:{s:11:\"skipOnEmpty\";b:0;s:13:\"requiredValue\";N;s:6:\"strict\";b:0;s:7:\"message\";s:28:\"{attribute} cannot be blank.\";s:10:\"attributes\";a:1:{i:0;s:5:\"email\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:2;O:38:\"usni\\library\\validators\\EmailValidator\":17:{s:7:\"pattern\";s:43:\"/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i\";s:11:\"fullPattern\";s:170:\"/^[^@]*<[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/\";s:9:\"allowName\";b:0;s:8:\"checkDNS\";b:0;s:9:\"enableIDN\";b:0;s:10:\"attributes\";a:1:{i:0;s:5:\"email\";}s:7:\"message\";s:41:\"{attribute} is not a valid email address.\";s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:3;O:30:\"yii\\validators\\NumberValidator\":19:{s:11:\"integerOnly\";b:0;s:3:\"max\";N;s:3:\"min\";N;s:6:\"tooBig\";N;s:8:\"tooSmall\";N;s:14:\"integerPattern\";s:18:\"/^\\s*[+-]?\\d+\\s*$/\";s:13:\"numberPattern\";s:48:\"/^\\s*[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?\\s*$/\";s:10:\"attributes\";a:1:{i:0;s:11:\"mobilephone\";}s:7:\"message\";s:29:\"{attribute} must be a number.\";s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:4;O:32:\"yii\\validators\\RequiredValidator\":14:{s:11:\"skipOnEmpty\";b:0;s:13:\"requiredValue\";N;s:6:\"strict\";b:0;s:7:\"message\";s:28:\"{attribute} cannot be blank.\";s:10:\"attributes\";a:7:{i:0;s:8:\"address1\";i:1;s:4:\"city\";i:2;s:7:\"country\";i:3;s:11:\"postal_code\";i:4;s:9:\"firstname\";i:5;s:8:\"lastname\";i:6;s:11:\"mobilephone\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:5;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:128;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:2:{i:0;s:8:\"address1\";i:1;s:8:\"address2\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:6;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:64;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:3:{i:0;s:4:\"city\";i:1;s:5:\"state\";i:2;s:7:\"country\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:7;O:28:\"yii\\validators\\SafeValidator\":12:{s:10:\"attributes\";a:11:{i:0;s:9:\"firstname\";i:1;s:8:\"lastname\";i:2;s:8:\"address1\";i:3;s:4:\"city\";i:4;s:7:\"country\";i:5;s:11:\"postal_code\";i:6;s:5:\"state\";i:7;s:8:\"address2\";i:8;s:5:\"email\";i:9;s:11:\"officephone\";i:10;s:11:\"mobilephone\";}s:7:\"message\";N;s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}};m:a:0:{}}s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+    'globalMenuItems' => [
+        0 => [
+            'id' => '4'
+            'image' => 'N2ExMjEzNz1.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '1'
+            'path' => '4'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:30:26'
+            'modified_datetime' => '2017-10-03 04:54:26'
+            'name' => 'Шины'
+            'description' => '<p>Шини для легкових автомобілів</p>'
+            'alias' => 'tires'
+        ]
+        1 => [
+            'id' => '5'
+            'image' => 'NGU1OWVhMz1269435540_dezentf-3.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '2'
+            'path' => '5'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:33:05'
+            'modified_datetime' => '2017-09-28 18:33:05'
+            'name' => 'Диски'
+            'description' => ''
+            'alias' => 'wheel_disc'
+        ]
+        2 => [
+            'id' => '6'
+            'image' => 'OWY0OGVmMWvi_3-oshz.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '3'
+            'path' => '6'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:34:48'
+            'modified_datetime' => '2017-10-03 04:54:52'
+            'name' => 'Грузовые шины'
+            'description' => ''
+            'alias' => 'heavy_tires'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://tires:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=238c2b3135fb55d58b6fedbfe94992cf; _frontendCSRF=2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE%22%3B%7D; _csrf=2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3%22%3B%7D; recent=3518a7c7fd31e5ba7d1c91c5a66a411d68ebbdf08681b3c96356a0ca4c9a07cda%3A2%3A%7Bi%3A0%3Bs%3A6%3A%22recent%22%3Bi%3A1%3Bs%3A81%3A%22%2C5897%2C8143%2C73%2C88%2C7617%2C848%2C4246%2C80%2C3272%2C7505%2C2384%2C5888%2C804%2C1521%2C8163%2C8663%2C724%2C8573%22%3B%7D; PHPBACKSESSID=dbf92b6a7eeece812f290f3b1b06962a; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/index.php'
+    'REMOTE_PORT' => '59464'
+    'REDIRECT_QUERY_STRING' => 'id=8515'
+    'REDIRECT_URL' => '/catalog/products/site/detail'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=8515'
+    'REQUEST_URI' => '/catalog/products/site/detail?id=8515'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507049528.98
+    'REQUEST_TIME' => 1507049528
+    'argv' => [
+        0 => 'id=8515'
+    ]
+    'argc' => 1
+]
+2017-10-03 19:52:14 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'KSEQRB0794', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/modules/language/business/Manager.php(78): yii\db\ActiveQuery->all()
+#10 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(105): usni\library\modules\language\business\Manager->getList()
+#11 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(49): backend\web\BeforeActionBehavior->setLanguageData()
+#12 /Users/macbook/Documents/mamp/tires/protected/frontend/web/BeforeActionBehavior.php(35): backend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#13 [internal function]: frontend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(144): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('detail', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#19 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#21 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/modules/language/business/Manager.php(78): yii\db\ActiveQuery->all()
+#8 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(105): usni\library\modules\language\business\Manager->getList()
+#9 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(49): backend\web\BeforeActionBehavior->setLanguageData()
+#10 /Users/macbook/Documents/mamp/tires/protected/frontend/web/BeforeActionBehavior.php(35): backend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#11 [internal function]: frontend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(144): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('detail', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2017-10-03 19:52:14 [::1][-][-][info][application] $_GET = [
+    'id' => '8515'
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => '238c2b3135fb55d58b6fedbfe94992cf'
+    '_frontendCSRF' => '2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE\";}'
+    '_csrf' => '2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3\";}'
+    'recent' => '3518a7c7fd31e5ba7d1c91c5a66a411d68ebbdf08681b3c96356a0ca4c9a07cda:2:{i:0;s:6:\"recent\";i:1;s:81:\",5897,8143,73,88,7617,848,4246,80,3272,7505,2384,5888,804,1521,8163,8663,724,8573\";}'
+    'PHPBACKSESSID' => 'dbf92b6a7eeece812f290f3b1b06962a'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'guest_1' => 'O:25:\"frontend\\components\\Guest\":6:{s:4:\"cart\";O:16:\"cart\\models\\Cart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"wishlist\";O:24:\"wishlist\\models\\Wishlist\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:15:\"compareproducts\";O:31:\"products\\models\\CompareProducts\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:20:\"cart\\models\\Checkout\":10:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";s:19:\"dubztep45@gmail.com\";s:9:\"firstname\";s:48:\"Слободян Роман Николаевич\";s:8:\"lastname\";s:8:\"lastname\";s:11:\"mobilephone\";s:9:\"986264200\";s:11:\"officephone\";N;s:8:\"address1\";s:8:\"address1\";s:4:\"city\";s:4:\"city\";s:7:\"country\";s:2:\"UA\";s:11:\"postal_code\";s:5:\"00000\";s:8:\"address2\";s:8:\"address2\";s:5:\"state\";s:5:\"state\";s:23:\"\0yii\\base\\Model\0_errors\";a:0:{}s:27:\"\0yii\\base\\Model\0_validators\";C:11:\"ArrayObject\":4738:{x:i:0;a:8:{i:0;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:32;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:2:{i:0;s:9:\"firstname\";i:1;s:8:\"lastname\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:1;O:32:\"yii\\validators\\RequiredValidator\":14:{s:11:\"skipOnEmpty\";b:0;s:13:\"requiredValue\";N;s:6:\"strict\";b:0;s:7:\"message\";s:28:\"{attribute} cannot be blank.\";s:10:\"attributes\";a:1:{i:0;s:5:\"email\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:2;O:38:\"usni\\library\\validators\\EmailValidator\":17:{s:7:\"pattern\";s:43:\"/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i\";s:11:\"fullPattern\";s:170:\"/^[^@]*<[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/\";s:9:\"allowName\";b:0;s:8:\"checkDNS\";b:0;s:9:\"enableIDN\";b:0;s:10:\"attributes\";a:1:{i:0;s:5:\"email\";}s:7:\"message\";s:41:\"{attribute} is not a valid email address.\";s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:3;O:30:\"yii\\validators\\NumberValidator\":19:{s:11:\"integerOnly\";b:0;s:3:\"max\";N;s:3:\"min\";N;s:6:\"tooBig\";N;s:8:\"tooSmall\";N;s:14:\"integerPattern\";s:18:\"/^\\s*[+-]?\\d+\\s*$/\";s:13:\"numberPattern\";s:48:\"/^\\s*[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?\\s*$/\";s:10:\"attributes\";a:1:{i:0;s:11:\"mobilephone\";}s:7:\"message\";s:29:\"{attribute} must be a number.\";s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:4;O:32:\"yii\\validators\\RequiredValidator\":14:{s:11:\"skipOnEmpty\";b:0;s:13:\"requiredValue\";N;s:6:\"strict\";b:0;s:7:\"message\";s:28:\"{attribute} cannot be blank.\";s:10:\"attributes\";a:7:{i:0;s:8:\"address1\";i:1;s:4:\"city\";i:2;s:7:\"country\";i:3;s:11:\"postal_code\";i:4;s:9:\"firstname\";i:5;s:8:\"lastname\";i:6;s:11:\"mobilephone\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:5;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:128;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:2:{i:0;s:8:\"address1\";i:1;s:8:\"address2\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:6;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:64;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:3:{i:0;s:4:\"city\";i:1;s:5:\"state\";i:2;s:7:\"country\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:7;O:28:\"yii\\validators\\SafeValidator\":12:{s:10:\"attributes\";a:11:{i:0;s:9:\"firstname\";i:1;s:8:\"lastname\";i:2;s:8:\"address1\";i:3;s:4:\"city\";i:4;s:7:\"country\";i:5;s:11:\"postal_code\";i:6;s:5:\"state\";i:7;s:8:\"address2\";i:8;s:5:\"email\";i:9;s:11:\"officephone\";i:10;s:11:\"mobilephone\";}s:7:\"message\";N;s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}};m:a:0:{}}s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+    'globalMenuItems' => [
+        0 => [
+            'id' => '4'
+            'image' => 'N2ExMjEzNz1.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '1'
+            'path' => '4'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:30:26'
+            'modified_datetime' => '2017-10-03 04:54:26'
+            'name' => 'Шины'
+            'description' => '<p>Шини для легкових автомобілів</p>'
+            'alias' => 'tires'
+        ]
+        1 => [
+            'id' => '5'
+            'image' => 'NGU1OWVhMz1269435540_dezentf-3.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '2'
+            'path' => '5'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:33:05'
+            'modified_datetime' => '2017-09-28 18:33:05'
+            'name' => 'Диски'
+            'description' => ''
+            'alias' => 'wheel_disc'
+        ]
+        2 => [
+            'id' => '6'
+            'image' => 'OWY0OGVmMWvi_3-oshz.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '3'
+            'path' => '6'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:34:48'
+            'modified_datetime' => '2017-10-03 04:54:52'
+            'name' => 'Грузовые шины'
+            'description' => ''
+            'alias' => 'heavy_tires'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://tires:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=238c2b3135fb55d58b6fedbfe94992cf; _frontendCSRF=2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE%22%3B%7D; _csrf=2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3%22%3B%7D; recent=3518a7c7fd31e5ba7d1c91c5a66a411d68ebbdf08681b3c96356a0ca4c9a07cda%3A2%3A%7Bi%3A0%3Bs%3A6%3A%22recent%22%3Bi%3A1%3Bs%3A81%3A%22%2C5897%2C8143%2C73%2C88%2C7617%2C848%2C4246%2C80%2C3272%2C7505%2C2384%2C5888%2C804%2C1521%2C8163%2C8663%2C724%2C8573%22%3B%7D; PHPBACKSESSID=dbf92b6a7eeece812f290f3b1b06962a; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/index.php'
+    'REMOTE_PORT' => '59492'
+    'REDIRECT_QUERY_STRING' => 'id=8515'
+    'REDIRECT_URL' => '/catalog/products/site/detail'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=8515'
+    'REQUEST_URI' => '/catalog/products/site/detail?id=8515'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507049534.04
+    'REQUEST_TIME' => 1507049534
+    'argv' => [
+        0 => 'id=8515'
+    ]
+    'argc' => 1
+]
+2017-10-03 19:52:14 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'KSEQRB0794', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/modules/language/business/Manager.php(78): yii\db\ActiveQuery->all()
+#10 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(105): usni\library\modules\language\business\Manager->getList()
+#11 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(49): backend\web\BeforeActionBehavior->setLanguageData()
+#12 /Users/macbook/Documents/mamp/tires/protected/frontend/web/BeforeActionBehavior.php(35): backend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#13 [internal function]: frontend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(144): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('detail', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#19 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#21 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/modules/language/business/Manager.php(78): yii\db\ActiveQuery->all()
+#8 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(105): usni\library\modules\language\business\Manager->getList()
+#9 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(49): backend\web\BeforeActionBehavior->setLanguageData()
+#10 /Users/macbook/Documents/mamp/tires/protected/frontend/web/BeforeActionBehavior.php(35): backend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#11 [internal function]: frontend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(144): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('detail', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2017-10-03 19:52:14 [::1][-][-][info][application] $_GET = [
+    'id' => '8515'
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => '238c2b3135fb55d58b6fedbfe94992cf'
+    '_frontendCSRF' => '2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE\";}'
+    '_csrf' => '2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3\";}'
+    'recent' => '3518a7c7fd31e5ba7d1c91c5a66a411d68ebbdf08681b3c96356a0ca4c9a07cda:2:{i:0;s:6:\"recent\";i:1;s:81:\",5897,8143,73,88,7617,848,4246,80,3272,7505,2384,5888,804,1521,8163,8663,724,8573\";}'
+    'PHPBACKSESSID' => 'dbf92b6a7eeece812f290f3b1b06962a'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'guest_1' => 'O:25:\"frontend\\components\\Guest\":6:{s:4:\"cart\";O:16:\"cart\\models\\Cart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"wishlist\";O:24:\"wishlist\\models\\Wishlist\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:15:\"compareproducts\";O:31:\"products\\models\\CompareProducts\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:20:\"cart\\models\\Checkout\":10:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";s:19:\"dubztep45@gmail.com\";s:9:\"firstname\";s:48:\"Слободян Роман Николаевич\";s:8:\"lastname\";s:8:\"lastname\";s:11:\"mobilephone\";s:9:\"986264200\";s:11:\"officephone\";N;s:8:\"address1\";s:8:\"address1\";s:4:\"city\";s:4:\"city\";s:7:\"country\";s:2:\"UA\";s:11:\"postal_code\";s:5:\"00000\";s:8:\"address2\";s:8:\"address2\";s:5:\"state\";s:5:\"state\";s:23:\"\0yii\\base\\Model\0_errors\";a:0:{}s:27:\"\0yii\\base\\Model\0_validators\";C:11:\"ArrayObject\":4738:{x:i:0;a:8:{i:0;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:32;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:2:{i:0;s:9:\"firstname\";i:1;s:8:\"lastname\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:1;O:32:\"yii\\validators\\RequiredValidator\":14:{s:11:\"skipOnEmpty\";b:0;s:13:\"requiredValue\";N;s:6:\"strict\";b:0;s:7:\"message\";s:28:\"{attribute} cannot be blank.\";s:10:\"attributes\";a:1:{i:0;s:5:\"email\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:2;O:38:\"usni\\library\\validators\\EmailValidator\":17:{s:7:\"pattern\";s:43:\"/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i\";s:11:\"fullPattern\";s:170:\"/^[^@]*<[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/\";s:9:\"allowName\";b:0;s:8:\"checkDNS\";b:0;s:9:\"enableIDN\";b:0;s:10:\"attributes\";a:1:{i:0;s:5:\"email\";}s:7:\"message\";s:41:\"{attribute} is not a valid email address.\";s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:3;O:30:\"yii\\validators\\NumberValidator\":19:{s:11:\"integerOnly\";b:0;s:3:\"max\";N;s:3:\"min\";N;s:6:\"tooBig\";N;s:8:\"tooSmall\";N;s:14:\"integerPattern\";s:18:\"/^\\s*[+-]?\\d+\\s*$/\";s:13:\"numberPattern\";s:48:\"/^\\s*[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?\\s*$/\";s:10:\"attributes\";a:1:{i:0;s:11:\"mobilephone\";}s:7:\"message\";s:29:\"{attribute} must be a number.\";s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:4;O:32:\"yii\\validators\\RequiredValidator\":14:{s:11:\"skipOnEmpty\";b:0;s:13:\"requiredValue\";N;s:6:\"strict\";b:0;s:7:\"message\";s:28:\"{attribute} cannot be blank.\";s:10:\"attributes\";a:7:{i:0;s:8:\"address1\";i:1;s:4:\"city\";i:2;s:7:\"country\";i:3;s:11:\"postal_code\";i:4;s:9:\"firstname\";i:5;s:8:\"lastname\";i:6;s:11:\"mobilephone\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:5;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:128;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:2:{i:0;s:8:\"address1\";i:1;s:8:\"address2\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:6;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:64;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:3:{i:0;s:4:\"city\";i:1;s:5:\"state\";i:2;s:7:\"country\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:7;O:28:\"yii\\validators\\SafeValidator\":12:{s:10:\"attributes\";a:11:{i:0;s:9:\"firstname\";i:1;s:8:\"lastname\";i:2;s:8:\"address1\";i:3;s:4:\"city\";i:4;s:7:\"country\";i:5;s:11:\"postal_code\";i:6;s:5:\"state\";i:7;s:8:\"address2\";i:8;s:5:\"email\";i:9;s:11:\"officephone\";i:10;s:11:\"mobilephone\";}s:7:\"message\";N;s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}};m:a:0:{}}s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+    'globalMenuItems' => [
+        0 => [
+            'id' => '4'
+            'image' => 'N2ExMjEzNz1.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '1'
+            'path' => '4'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:30:26'
+            'modified_datetime' => '2017-10-03 04:54:26'
+            'name' => 'Шины'
+            'description' => '<p>Шини для легкових автомобілів</p>'
+            'alias' => 'tires'
+        ]
+        1 => [
+            'id' => '5'
+            'image' => 'NGU1OWVhMz1269435540_dezentf-3.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '2'
+            'path' => '5'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:33:05'
+            'modified_datetime' => '2017-09-28 18:33:05'
+            'name' => 'Диски'
+            'description' => ''
+            'alias' => 'wheel_disc'
+        ]
+        2 => [
+            'id' => '6'
+            'image' => 'OWY0OGVmMWvi_3-oshz.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '3'
+            'path' => '6'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:34:48'
+            'modified_datetime' => '2017-10-03 04:54:52'
+            'name' => 'Грузовые шины'
+            'description' => ''
+            'alias' => 'heavy_tires'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://tires:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=238c2b3135fb55d58b6fedbfe94992cf; _frontendCSRF=2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE%22%3B%7D; _csrf=2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3%22%3B%7D; recent=3518a7c7fd31e5ba7d1c91c5a66a411d68ebbdf08681b3c96356a0ca4c9a07cda%3A2%3A%7Bi%3A0%3Bs%3A6%3A%22recent%22%3Bi%3A1%3Bs%3A81%3A%22%2C5897%2C8143%2C73%2C88%2C7617%2C848%2C4246%2C80%2C3272%2C7505%2C2384%2C5888%2C804%2C1521%2C8163%2C8663%2C724%2C8573%22%3B%7D; PHPBACKSESSID=dbf92b6a7eeece812f290f3b1b06962a; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/index.php'
+    'REMOTE_PORT' => '59493'
+    'REDIRECT_QUERY_STRING' => 'id=8515'
+    'REDIRECT_URL' => '/catalog/products/site/detail'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=8515'
+    'REQUEST_URI' => '/catalog/products/site/detail?id=8515'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507049534.82
+    'REQUEST_TIME' => 1507049534
+    'argv' => [
+        0 => 'id=8515'
+    ]
+    'argc' => 1
+]
+2017-10-03 19:52:18 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'KSEQRB0794', NULL)
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/modules/language/business/Manager.php(78): yii\db\ActiveQuery->all()
+#10 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(105): usni\library\modules\language\business\Manager->getList()
+#11 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(49): backend\web\BeforeActionBehavior->setLanguageData()
+#12 /Users/macbook/Documents/mamp/tires/protected/frontend/web/BeforeActionBehavior.php(35): backend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#13 [internal function]: frontend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(144): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#18 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#19 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#21 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/modules/language/business/Manager.php(78): yii\db\ActiveQuery->all()
+#8 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(105): usni\library\modules\language\business\Manager->getList()
+#9 /Users/macbook/Documents/mamp/tires/protected/backend/web/BeforeActionBehavior.php(49): backend\web\BeforeActionBehavior->setLanguageData()
+#10 /Users/macbook/Documents/mamp/tires/protected/frontend/web/BeforeActionBehavior.php(35): backend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#11 [internal function]: frontend\web\BeforeActionBehavior->handleOnBeforeAction(Object(yii\base\ActionEvent))
+#12 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#13 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#14 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(144): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#15 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#16 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#17 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /Users/macbook/Documents/mamp/tires/index.php(47): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2017-10-03 19:52:18 [::1][-][-][info][application] $_COOKIE = [
+    'PHPFRONTSESSID' => '238c2b3135fb55d58b6fedbfe94992cf'
+    '_frontendCSRF' => '2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE\";}'
+    '_csrf' => '2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3\";}'
+    'recent' => '3518a7c7fd31e5ba7d1c91c5a66a411d68ebbdf08681b3c96356a0ca4c9a07cda:2:{i:0;s:6:\"recent\";i:1;s:81:\",5897,8143,73,88,7617,848,4246,80,3272,7505,2384,5888,804,1521,8163,8663,724,8573\";}'
+    'PHPBACKSESSID' => 'dbf92b6a7eeece812f290f3b1b06962a'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'guest_1' => 'O:25:\"frontend\\components\\Guest\":6:{s:4:\"cart\";O:16:\"cart\\models\\Cart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"wishlist\";O:24:\"wishlist\\models\\Wishlist\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:15:\"compareproducts\";O:31:\"products\\models\\CompareProducts\":3:{s:9:\"itemsList\";a:0:{}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:20:\"cart\\models\\Checkout\":10:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:19;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";s:19:\"dubztep45@gmail.com\";s:9:\"firstname\";s:48:\"Слободян Роман Николаевич\";s:8:\"lastname\";s:8:\"lastname\";s:11:\"mobilephone\";s:9:\"986264200\";s:11:\"officephone\";N;s:8:\"address1\";s:8:\"address1\";s:4:\"city\";s:4:\"city\";s:7:\"country\";s:2:\"UA\";s:11:\"postal_code\";s:5:\"00000\";s:8:\"address2\";s:8:\"address2\";s:5:\"state\";s:5:\"state\";s:23:\"\0yii\\base\\Model\0_errors\";a:0:{}s:27:\"\0yii\\base\\Model\0_validators\";C:11:\"ArrayObject\":4738:{x:i:0;a:8:{i:0;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:32;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:2:{i:0;s:9:\"firstname\";i:1;s:8:\"lastname\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:1;O:32:\"yii\\validators\\RequiredValidator\":14:{s:11:\"skipOnEmpty\";b:0;s:13:\"requiredValue\";N;s:6:\"strict\";b:0;s:7:\"message\";s:28:\"{attribute} cannot be blank.\";s:10:\"attributes\";a:1:{i:0;s:5:\"email\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:2;O:38:\"usni\\library\\validators\\EmailValidator\":17:{s:7:\"pattern\";s:43:\"/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i\";s:11:\"fullPattern\";s:170:\"/^[^@]*<[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/\";s:9:\"allowName\";b:0;s:8:\"checkDNS\";b:0;s:9:\"enableIDN\";b:0;s:10:\"attributes\";a:1:{i:0;s:5:\"email\";}s:7:\"message\";s:41:\"{attribute} is not a valid email address.\";s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:3;O:30:\"yii\\validators\\NumberValidator\":19:{s:11:\"integerOnly\";b:0;s:3:\"max\";N;s:3:\"min\";N;s:6:\"tooBig\";N;s:8:\"tooSmall\";N;s:14:\"integerPattern\";s:18:\"/^\\s*[+-]?\\d+\\s*$/\";s:13:\"numberPattern\";s:48:\"/^\\s*[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?\\s*$/\";s:10:\"attributes\";a:1:{i:0;s:11:\"mobilephone\";}s:7:\"message\";s:29:\"{attribute} must be a number.\";s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:4;O:32:\"yii\\validators\\RequiredValidator\":14:{s:11:\"skipOnEmpty\";b:0;s:13:\"requiredValue\";N;s:6:\"strict\";b:0;s:7:\"message\";s:28:\"{attribute} cannot be blank.\";s:10:\"attributes\";a:7:{i:0;s:8:\"address1\";i:1;s:4:\"city\";i:2;s:7:\"country\";i:3;s:11:\"postal_code\";i:4;s:9:\"firstname\";i:5;s:8:\"lastname\";i:6;s:11:\"mobilephone\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:5;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:128;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:2:{i:0;s:8:\"address1\";i:1;s:8:\"address2\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:6;O:30:\"yii\\validators\\StringValidator\":19:{s:6:\"length\";N;s:3:\"max\";i:64;s:3:\"min\";N;s:7:\"message\";s:29:\"{attribute} must be a string.\";s:8:\"tooShort\";N;s:7:\"tooLong\";s:97:\"{attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.\";s:8:\"notEqual\";N;s:8:\"encoding\";s:5:\"UTF-8\";s:10:\"attributes\";a:3:{i:0;s:4:\"city\";i:1;s:5:\"state\";i:2;s:7:\"country\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:7;O:28:\"yii\\validators\\SafeValidator\":12:{s:10:\"attributes\";a:11:{i:0;s:9:\"firstname\";i:1;s:8:\"lastname\";i:2;s:8:\"address1\";i:3;s:4:\"city\";i:4;s:7:\"country\";i:5;s:11:\"postal_code\";i:6;s:5:\"state\";i:7;s:8:\"address2\";i:8;s:5:\"email\";i:9;s:11:\"officephone\";i:10;s:11:\"mobilephone\";}s:7:\"message\";N;s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}};m:a:0:{}}s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+    'globalMenuItems' => [
+        0 => [
+            'id' => '4'
+            'image' => 'N2ExMjEzNz1.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '1'
+            'path' => '4'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:30:26'
+            'modified_datetime' => '2017-10-03 04:54:26'
+            'name' => 'Шины'
+            'description' => '<p>Шини для легкових автомобілів</p>'
+            'alias' => 'tires'
+        ]
+        1 => [
+            'id' => '5'
+            'image' => 'NGU1OWVhMz1269435540_dezentf-3.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '2'
+            'path' => '5'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:33:05'
+            'modified_datetime' => '2017-09-28 18:33:05'
+            'name' => 'Диски'
+            'description' => ''
+            'alias' => 'wheel_disc'
+        ]
+        2 => [
+            'id' => '6'
+            'image' => 'OWY0OGVmMWvi_3-oshz.jpg'
+            'parent_id' => '0'
+            'level' => '0'
+            'status' => '1'
+            'displayintopmenu' => '1'
+            'data_category_id' => '1'
+            'code' => '3'
+            'path' => '6'
+            'created_by' => '1'
+            'modified_by' => '1'
+            'created_datetime' => '2017-09-28 18:34:48'
+            'modified_datetime' => '2017-10-03 04:54:52'
+            'name' => 'Грузовые шины'
+            'description' => ''
+            'alias' => 'heavy_tires'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://tires:8888/cms/site/page?alias=contacts'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=238c2b3135fb55d58b6fedbfe94992cf; _frontendCSRF=2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE%22%3B%7D; _csrf=2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3%22%3B%7D; recent=3518a7c7fd31e5ba7d1c91c5a66a411d68ebbdf08681b3c96356a0ca4c9a07cda%3A2%3A%7Bi%3A0%3Bs%3A6%3A%22recent%22%3Bi%3A1%3Bs%3A81%3A%22%2C5897%2C8143%2C73%2C88%2C7617%2C848%2C4246%2C80%2C3272%2C7505%2C2384%2C5888%2C804%2C1521%2C8163%2C8663%2C724%2C8573%22%3B%7D; PHPBACKSESSID=dbf92b6a7eeece812f290f3b1b06962a; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/index.php'
+    'REMOTE_PORT' => '59498'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507049538.8
+    'REQUEST_TIME' => 1507049538
+    'argv' => []
+    'argc' => 0
+]

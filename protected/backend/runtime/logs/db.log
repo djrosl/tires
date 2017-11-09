@@ -1,0 +1,339 @@
+2017-09-28 17:34:06 [::1][1][f64bd76c704d7dbf2bd2809a5f973375][error][yii\db\Exception] yii\db\Exception: This is base currency for the system and can not be deleted. in /Users/macbook/Documents/mamp/tires/protected/common/modules/localization/modules/currency/models/Currency.php:114
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveRecord.php(642): common\modules\localization\modules\currency\models\Currency->beforeDelete()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveRecord.php(613): yii\db\ActiveRecord->deleteInternal()
+#2 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/business/Manager.php(343): yii\db\ActiveRecord->delete()
+#3 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/business/Manager.php(306): usni\library\business\Manager->deleteModel(Object(common\modules\localization\modules\currency\models\Currency))
+#4 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/web/actions/BulkDeleteAction.php(49): usni\library\business\Manager->processBulkDelete(Object(usni\library\dto\GridViewDTO))
+#5 [internal function]: usni\library\web\actions\BulkDeleteAction->run()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\Action->runWithParams(Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('bulk-delete', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('localization/cu...', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/macbook/Documents/mamp/tires/backend/index.php(47): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+)
+
+2017-09-28 17:34:06 [::1][1][f64bd76c704d7dbf2bd2809a5f973375][info][application] $_GET = [
+    'id' => [
+        0 => '1'
+        1 => '2'
+    ]
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => '7d9f45f801e79fdff6ab31ef2b97b4ea'
+    '_csrf' => '122599517c6c8044f1b918b2b27e4523ec2db989e11dc9cd81d0d76fc9df5593a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ylHf5g1itl_5qGPwePXQUCBi9vJDA8Ol\";}'
+    '_frontendCSRF' => '739f68651f68c9baa841bfbab52b85373a667ce0a79b7ccd6b37b945ed4e205fa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"t3yVDUso5kKRIBjWHVZudd-Afr1POhvU\";}'
+    'PHPBACKSESSID' => 'f64bd76c704d7dbf2bd2809a5f973375'
+    'whatacartFrontContentLanguage' => '1e9303449001b8a8aa1733d17f8a059e3134e7a72847779adfd3530835b5836ca:2:{i:0;s:29:\"whatacartFrontContentLanguage\";i:1;s:5:\"en-US\";}'
+    'whatacartAdminContentLanguage' => '8f179adbf0ff41fb3d5b2c4bb16a46a5c83e7f6d9d50558565077e1bdba8e8faa:2:{i:0;s:29:\"whatacartAdminContentLanguage\";i:1;s:5:\"en-US\";}'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'anREVWlmTVATGAwzXAF8OR4YG2AYIR0nDyQcBDwlDzlTAg4RKF4CPA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_REFERER' => 'http://tires:8888/backend/index.php/localization/currency/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=7d9f45f801e79fdff6ab31ef2b97b4ea; _csrf=122599517c6c8044f1b918b2b27e4523ec2db989e11dc9cd81d0d76fc9df5593a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ylHf5g1itl_5qGPwePXQUCBi9vJDA8Ol%22%3B%7D; _frontendCSRF=739f68651f68c9baa841bfbab52b85373a667ce0a79b7ccd6b37b945ed4e205fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22t3yVDUso5kKRIBjWHVZudd-Afr1POhvU%22%3B%7D; PHPBACKSESSID=f64bd76c704d7dbf2bd2809a5f973375; whatacartFrontContentLanguage=1e9303449001b8a8aa1733d17f8a059e3134e7a72847779adfd3530835b5836ca%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22whatacartFrontContentLanguage%22%3Bi%3A1%3Bs%3A5%3A%22en-US%22%3B%7D; whatacartAdminContentLanguage=8f179adbf0ff41fb3d5b2c4bb16a46a5c83e7f6d9d50558565077e1bdba8e8faa%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22whatacartAdminContentLanguage%22%3Bi%3A1%3Bs%3A5%3A%22en-US%22%3B%7D; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/backend/index.php'
+    'REMOTE_PORT' => '62145'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id%5B%5D=1&id%5B%5D=2'
+    'REQUEST_URI' => '/backend/index.php/localization/currency/default/bulk-delete?id%5B%5D=1&id%5B%5D=2'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PATH_INFO' => '/localization/currency/default/bulk-delete'
+    'PATH_TRANSLATED' => 'redirect:/index.php/currency/default/bulk-delete'
+    'PHP_SELF' => '/backend/index.php/localization/currency/default/bulk-delete'
+    'REQUEST_TIME_FLOAT' => 1506609246.46
+    'REQUEST_TIME' => 1506609246
+    'argv' => [
+        0 => 'id%5B%5D=1&id%5B%5D=2'
+    ]
+    'argc' => 1
+]
+2017-09-28 17:35:13 [::1][1][f64bd76c704d7dbf2bd2809a5f973375][error][yii\db\Exception] yii\db\Exception: This is base currency for the system and can not be deleted. in /Users/macbook/Documents/mamp/tires/protected/common/modules/localization/modules/currency/models/Currency.php:114
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveRecord.php(642): common\modules\localization\modules\currency\models\Currency->beforeDelete()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveRecord.php(613): yii\db\ActiveRecord->deleteInternal()
+#2 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/business/Manager.php(343): yii\db\ActiveRecord->delete()
+#3 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/business/Manager.php(306): usni\library\business\Manager->deleteModel(Object(common\modules\localization\modules\currency\models\Currency))
+#4 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/web/actions/BulkDeleteAction.php(49): usni\library\business\Manager->processBulkDelete(Object(usni\library\dto\GridViewDTO))
+#5 [internal function]: usni\library\web\actions\BulkDeleteAction->run()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\Action->runWithParams(Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('bulk-delete', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('localization/cu...', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/macbook/Documents/mamp/tires/backend/index.php(47): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+)
+
+2017-09-28 17:35:13 [::1][1][f64bd76c704d7dbf2bd2809a5f973375][info][application] $_GET = [
+    'id' => [
+        0 => '1'
+        1 => '2'
+    ]
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => '7d9f45f801e79fdff6ab31ef2b97b4ea'
+    '_csrf' => '122599517c6c8044f1b918b2b27e4523ec2db989e11dc9cd81d0d76fc9df5593a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ylHf5g1itl_5qGPwePXQUCBi9vJDA8Ol\";}'
+    '_frontendCSRF' => '739f68651f68c9baa841bfbab52b85373a667ce0a79b7ccd6b37b945ed4e205fa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"t3yVDUso5kKRIBjWHVZudd-Afr1POhvU\";}'
+    'PHPBACKSESSID' => 'f64bd76c704d7dbf2bd2809a5f973375'
+    'whatacartFrontContentLanguage' => '1e9303449001b8a8aa1733d17f8a059e3134e7a72847779adfd3530835b5836ca:2:{i:0;s:29:\"whatacartFrontContentLanguage\";i:1;s:5:\"en-US\";}'
+    'whatacartAdminContentLanguage' => '8f179adbf0ff41fb3d5b2c4bb16a46a5c83e7f6d9d50558565077e1bdba8e8faa:2:{i:0;s:29:\"whatacartAdminContentLanguage\";i:1;s:5:\"en-US\";}'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'YnVzOEVrUnUbGTtecAxjHBYZLA00LAICByUraRAoEBxbAzl8BFMdGQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_REFERER' => 'http://tires:8888/backend/index.php/localization/currency/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=7d9f45f801e79fdff6ab31ef2b97b4ea; _csrf=122599517c6c8044f1b918b2b27e4523ec2db989e11dc9cd81d0d76fc9df5593a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ylHf5g1itl_5qGPwePXQUCBi9vJDA8Ol%22%3B%7D; _frontendCSRF=739f68651f68c9baa841bfbab52b85373a667ce0a79b7ccd6b37b945ed4e205fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22t3yVDUso5kKRIBjWHVZudd-Afr1POhvU%22%3B%7D; PHPBACKSESSID=f64bd76c704d7dbf2bd2809a5f973375; whatacartFrontContentLanguage=1e9303449001b8a8aa1733d17f8a059e3134e7a72847779adfd3530835b5836ca%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22whatacartFrontContentLanguage%22%3Bi%3A1%3Bs%3A5%3A%22en-US%22%3B%7D; whatacartAdminContentLanguage=8f179adbf0ff41fb3d5b2c4bb16a46a5c83e7f6d9d50558565077e1bdba8e8faa%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22whatacartAdminContentLanguage%22%3Bi%3A1%3Bs%3A5%3A%22en-US%22%3B%7D; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/backend/index.php'
+    'REMOTE_PORT' => '62207'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id%5B%5D=1&id%5B%5D=2'
+    'REQUEST_URI' => '/backend/index.php/localization/currency/default/bulk-delete?id%5B%5D=1&id%5B%5D=2'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PATH_INFO' => '/localization/currency/default/bulk-delete'
+    'PATH_TRANSLATED' => 'redirect:/index.php/currency/default/bulk-delete'
+    'PHP_SELF' => '/backend/index.php/localization/currency/default/bulk-delete'
+    'REQUEST_TIME_FLOAT' => 1506609313.07
+    'REQUEST_TIME' => 1506609313
+    'argv' => [
+        0 => 'id%5B%5D=1&id%5B%5D=2'
+    ]
+    'argc' => 1
+]
+2017-09-28 17:36:55 [::1][1][f64bd76c704d7dbf2bd2809a5f973375][error][yii\db\Exception] yii\db\Exception: products are associated to category. in /Users/macbook/Documents/mamp/tires/protected/common/modules/catalog/modules/productCategories/models/ProductCategory.php:139
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveRecord.php(642): productCategories\models\ProductCategory->beforeDelete()
+#1 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/ActiveRecord.php(613): yii\db\ActiveRecord->deleteInternal()
+#2 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/business/Manager.php(343): yii\db\ActiveRecord->delete()
+#3 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/business/Manager.php(306): usni\library\business\Manager->deleteModel(Object(productCategories\models\ProductCategory))
+#4 /Users/macbook/Documents/mamp/tires/vendor/ushainformatique/yiichimp/library/web/actions/BulkDeleteAction.php(49): usni\library\business\Manager->processBulkDelete(Object(usni\library\dto\GridViewDTO))
+#5 [internal function]: usni\library\web\actions\BulkDeleteAction->run()
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\Action->runWithParams(Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('bulk-delete', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#10 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/macbook/Documents/mamp/tires/backend/index.php(47): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+)
+
+2017-09-28 17:36:55 [::1][1][f64bd76c704d7dbf2bd2809a5f973375][info][application] $_GET = [
+    'id' => [
+        0 => '1'
+        1 => '2'
+        2 => '3'
+    ]
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => '7d9f45f801e79fdff6ab31ef2b97b4ea'
+    '_csrf' => '122599517c6c8044f1b918b2b27e4523ec2db989e11dc9cd81d0d76fc9df5593a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ylHf5g1itl_5qGPwePXQUCBi9vJDA8Ol\";}'
+    '_frontendCSRF' => '739f68651f68c9baa841bfbab52b85373a667ce0a79b7ccd6b37b945ed4e205fa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"t3yVDUso5kKRIBjWHVZudd-Afr1POhvU\";}'
+    'PHPBACKSESSID' => 'f64bd76c704d7dbf2bd2809a5f973375'
+    'whatacartFrontContentLanguage' => '1e9303449001b8a8aa1733d17f8a059e3134e7a72847779adfd3530835b5836ca:2:{i:0;s:29:\"whatacartFrontContentLanguage\";i:1;s:5:\"en-US\";}'
+    'whatacartAdminContentLanguage' => '8f179adbf0ff41fb3d5b2c4bb16a46a5c83e7f6d9d50558565077e1bdba8e8faa:2:{i:0;s:29:\"whatacartAdminContentLanguage\";i:1;s:5:\"en-US\";}'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'cVV5LVJtencIOTFLZwpLHgU5JhgjKioAFAUhfAcuOB5IIzNpE1U1Gw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_REFERER' => 'http://tires:8888/backend/index.php/catalog/productCategories/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=7d9f45f801e79fdff6ab31ef2b97b4ea; _csrf=122599517c6c8044f1b918b2b27e4523ec2db989e11dc9cd81d0d76fc9df5593a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ylHf5g1itl_5qGPwePXQUCBi9vJDA8Ol%22%3B%7D; _frontendCSRF=739f68651f68c9baa841bfbab52b85373a667ce0a79b7ccd6b37b945ed4e205fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22t3yVDUso5kKRIBjWHVZudd-Afr1POhvU%22%3B%7D; PHPBACKSESSID=f64bd76c704d7dbf2bd2809a5f973375; whatacartFrontContentLanguage=1e9303449001b8a8aa1733d17f8a059e3134e7a72847779adfd3530835b5836ca%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22whatacartFrontContentLanguage%22%3Bi%3A1%3Bs%3A5%3A%22en-US%22%3B%7D; whatacartAdminContentLanguage=8f179adbf0ff41fb3d5b2c4bb16a46a5c83e7f6d9d50558565077e1bdba8e8faa%3A2%3A%7Bi%3A0%3Bs%3A29%3A%22whatacartAdminContentLanguage%22%3Bi%3A1%3Bs%3A5%3A%22en-US%22%3B%7D; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/backend/index.php'
+    'REMOTE_PORT' => '62265'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id%5B%5D=1&id%5B%5D=2&id%5B%5D=3'
+    'REQUEST_URI' => '/backend/index.php/catalog/productCategories/default/bulk-delete?id%5B%5D=1&id%5B%5D=2&id%5B%5D=3'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PATH_INFO' => '/catalog/productCategories/default/bulk-delete'
+    'PATH_TRANSLATED' => 'redirect:/index.php/productCategories/default/bulk-delete'
+    'PHP_SELF' => '/backend/index.php/catalog/productCategories/default/bulk-delete'
+    'REQUEST_TIME_FLOAT' => 1506609415.43
+    'REQUEST_TIME' => 1506609415
+    'argv' => [
+        0 => 'id%5B%5D=1&id%5B%5D=2&id%5B%5D=3'
+    ]
+    'argc' => 1
+]
+2017-10-03 01:58:18 [::1][1][4e74bb279dd871013ce19166c9bb8b8a][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-cashondelivery-order_status' for key 'idx_store_code_key' in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php:846
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(846): PDOStatement->execute()
+#1 /Users/macbook/Documents/mamp/tires/protected/common/modules/stores/business/ConfigManager.php(164): yii\db\Command->execute()
+#2 /Users/macbook/Documents/mamp/tires/protected/common/modules/payment/business/cashondelivery/Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', '8', 1)
+#3 /Users/macbook/Documents/mamp/tires/protected/common/modules/payment/controllers/cashondelivery/DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Users/macbook/Documents/mamp/tires/backend/index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-cashondelivery-order_status' for key 'idx_store_code_key'
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', '8', 1, '2017-10-03 01:58:18', 1, '2017-10-03 01:58:18') in /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/db/Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 /Users/macbook/Documents/mamp/tires/protected/common/modules/stores/business/ConfigManager.php(164): yii\db\Command->execute()
+#2 /Users/macbook/Documents/mamp/tires/protected/common/modules/payment/business/cashondelivery/Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', '8', 1)
+#3 /Users/macbook/Documents/mamp/tires/protected/common/modules/payment/controllers/cashondelivery/DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 /Users/macbook/Documents/mamp/tires/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Users/macbook/Documents/mamp/tires/backend/index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '1-cashondelivery-order_status' for key 'idx_store_code_key'
+)
+
+2017-10-03 01:58:18 [::1][1][4e74bb279dd871013ce19166c9bb8b8a][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => '238c2b3135fb55d58b6fedbfe94992cf'
+    '_frontendCSRF' => '2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE\";}'
+    '_csrf' => '2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3\";}'
+    'recent' => '4a2466e3ca1401da097a26962dd7626e158dc4157f9e7fa46b18444218cb2fb7a:2:{i:0;s:6:\"recent\";i:1;s:33:\",5897,8143,73,88,7617,848,4246,80\";}'
+    'PHPBACKSESSID' => '4e74bb279dd871013ce19166c9bb8b8a'
+    '_backendUser' => '4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'tires:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://tires:8888/backend/index.php/payment/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6,uk;q=0.4'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=238c2b3135fb55d58b6fedbfe94992cf; _frontendCSRF=2255d443220e7a05678ac322797bf827307f65990fabc78674f01b63f737545ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22G9OBiAdKPsR1vZxVZ1Xh6iZAPAJLI-dE%22%3B%7D; _csrf=2f45ce1077760d8a4586e8ceb590661370c4399d737e0764d014453b0acbb3b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LJHGk7mAw9PbyOM2JiRHfwUlznTLMBN3%22%3B%7D; recent=4a2466e3ca1401da097a26962dd7626e158dc4157f9e7fa46b18444218cb2fb7a%3A2%3A%7Bi%3A0%3Bs%3A6%3A%22recent%22%3Bi%3A1%3Bs%3A33%3A%22%2C5897%2C8143%2C73%2C88%2C7617%2C848%2C4246%2C80%22%3B%7D; PHPBACKSESSID=4e74bb279dd871013ce19166c9bb8b8a; _backendUser=4fdc3fc50b745cc22ba5a240edf3f0866827dc879803351551031daf5d37e63ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uy1P9ohWYh8WN6Fq2VR4YVcoURLPaojh%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'tires'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/macbook/Documents/mamp/tires'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/macbook/Documents/mamp/tires/backend/index.php'
+    'REMOTE_PORT' => '61792'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'redirect:/index.php/cashondelivery/default/change-status'
+    'PHP_SELF' => '/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1506985098.22
+    'REQUEST_TIME' => 1506985098
+    'argv' => [
+        0 => 'id=1&status=1'
+    ]
+    'argc' => 1
+]
